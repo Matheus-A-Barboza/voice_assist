@@ -77,8 +77,8 @@ def iniciar_jarvis():
     )
     
     print(f"-------------------------------------------------------")
-    print(f"⭐ Assistente rodando. Escutando o hotword: '{HOTWORD}' ⭐")
-    print(f"Para encerrar diga: '{HOTWORD} fechar assistente'")
+    print(f"⭐ Jarvis Online. ⭐")
+    print(f"Para encerrar diga: '{HOTWORD} até mais.'")
     print(f"-------------------------------------------------------")
     
     falar("Bem Vindo, Jarvis Iniciado!")
@@ -94,9 +94,6 @@ def iniciar_jarvis():
             
             if result >= 0:
                 print("\n🚨 GATILHO DETECTADO 🚨")
-                
-                # falar("Estou pronto!")
-                
                 time.sleep(0.5)
                 comando = ouvir()
                 if comando:
